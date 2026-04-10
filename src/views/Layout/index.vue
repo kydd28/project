@@ -1,8 +1,8 @@
 <template>
   <LayoutHeader></LayoutHeader>
   <LayoutBanner></LayoutBanner>
-  <LayoutNav></LayoutNav>
   <LayoutHeaderFix></LayoutHeaderFix>
+  <HomeHot></HomeHot>
   <LayoutFooter></LayoutFooter>
 </template>
 
@@ -11,7 +11,20 @@ import LayoutFooter from './conponents/LayoutFooter.vue';
 import LayoutHeader   from './conponents/LayoutHeader.vue';
 import LayoutBanner from './conponents/LayoutBanner.vue';
 import LayoutHeaderFix from './conponents/LayoutHeaderFix.vue';
-import LayoutNav from './conponents/LayoutNav.vue';
+import HomeHot from '../Home/HomeHot.vue';
+
+
+import { getallcategoryapi } from '@/api/home';
+import { ref,onMounted } from 'vue';
+const a=ref([])
+const allcategotylist= async()=>{
+  const res = await getallcategoryapi()
+  console.log(res);
+  a.value=res.data.result 
+}
+onMounted(()=>{
+  allcategotylist()
+})
 </script>
 
 <style lang="scss" scoped>

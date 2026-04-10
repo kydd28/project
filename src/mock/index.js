@@ -1,4 +1,12 @@
 import Mock from "mockjs";
+//hotgoods接口的引入
+import "@/mock/hot"
+//首页全部分类的引入
+import "@/mock/allcategory"
+// 新鲜好物的引入
+import "@/mock/newgoods"
+//二级分类列表的导入
+import "@/mock/twocategory"
 const bannerData = {
   "code": "1",
   "msg": "操作成功",
