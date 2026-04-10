@@ -1,5 +1,7 @@
 <template>
-  <RouterView></RouterView>
+  <div>
+    我是Nav
+  </div>
 </template>
 
 <script setup>
