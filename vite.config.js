@@ -10,7 +10,9 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:'/project/',
   plugins: [
+    
     vue(),
     vueDevTools(),
     AutoImport({
@@ -19,6 +21,7 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
     }),
+
   ],
   resolve: {
     alias: {

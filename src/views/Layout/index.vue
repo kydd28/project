@@ -2,7 +2,7 @@
   <LayoutHeader></LayoutHeader>
   <LayoutBanner></LayoutBanner>
   <LayoutHeaderFix></LayoutHeaderFix>
-  <HomeHot></HomeHot>
+  <RouterView></RouterView>
   <LayoutFooter></LayoutFooter>
 </template>
 

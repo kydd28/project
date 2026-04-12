@@ -14,7 +14,7 @@ onMounted(()=>{
 
 <template>
   <div>
-    我是热门好物
+    你看我是不是热门好物
   </div>
 </template>
 
